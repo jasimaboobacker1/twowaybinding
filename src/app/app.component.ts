@@ -14,8 +14,10 @@ export class AppComponent {
   title = 'task';
   width=700;
   public showtable=false;
-  public changedStyle=false;
+  public changedStyle1=false;
   public Changedheadstyle=false;
+  public Changedheadstyle3=false;
+
 
   items = [
     { id: 1, name: 'John Doe', place: 'New York' },
@@ -28,8 +30,10 @@ export class AppComponent {
   }
 
   Change(){
-    this.changedStyle=true;
+    this.changedStyle1=true;
     this.Changedheadstyle=true;
+    this.Changedheadstyle3=true;
+
 
   }
 

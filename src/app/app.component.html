@@ -4,17 +4,17 @@
     <table [ngStyle]="{ 'width.px': width,'box-shadow':'rgba(0, 0, 0, 0.35) 0px 5px 15px','border-radius':'10px'}" class="table">
       <thead >
         <tr >
-          <th scope="col" [ngClass]="{'style-head': Changedheadstyle}">id</th>
-          <th scope="col" [ngClass]="{'style-head': Changedheadstyle}">Name</th>
-          <th scope="col" [ngClass]="{'style-head': Changedheadstyle}">Place</th>
+          <th scope="col" [ngClass]="{'style-head': changedStyle1}">id</th>
+          <th scope="col" [ngClass]="{'new-style': Changedheadstyle}">Name</th>
+          <th scope="col" [ngClass]="{'newstyle3': Changedheadstyle3}">Place</th>
         </tr>
       </thead>
       <tbody [ngClass]="{'style':true}">
         @for(item of items;track item.id){
         <tr>
-          <th [ngClass]="{'new-style': changedStyle}" scope="row">{{item.id}}</th>
-          <td [ngClass]="{'new-style': changedStyle}">{{item.name}}</td>
-          <td [ngClass]="{'new-style': changedStyle}">{{item.place}}</td>
+          <th [ngClass]="{'style-head': changedStyle1}" scope="row">{{item.id}}</th>
+          <td [ngClass]="{'new-style': Changedheadstyle}">{{item.name}}</td>
+          <td [ngClass]="{'newstyle3': Changedheadstyle3}">{{item.place}}</td>
         </tr>}@empty{
           No items
         }
